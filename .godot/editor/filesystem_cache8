@@ -1,6 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1704085854
+::res://::1704322000
 icon.svg::CompressedTexture2D::1730451811002220422::1704058931::1704058938::1::::<><>::
+paused_menu.gd::GDScript::-1::1704123174::0::1::::<>Control<>::
+paused_menu.tscn::PackedScene::414206236928370908::1704138357::0::1::::<><>::res://paused_menu.gd<>uid://x7xgrdeg4sef::::res://Font/tenderness.otf
 ::res://2D Pixel Dungeon Asset Pack/::1704059059
 Dungeon_Character_at.png::CompressedTexture2D::647278290841270675::1544180686::1704059059::1::::<><>::
 Dungeon_Tileset_at.png::CompressedTexture2D::3134299145584664579::1544180778::1704059059::1::::<><>::
@@ -242,14 +244,17 @@ Lose.ogg::AudioStreamOggVorbis::6863943389131231172::1704058931::1704058938::1::
 tornado.ogg::AudioStreamOggVorbis::2600473014655186913::1704058931::1704058938::1::::<><>::
 Victory.wav::AudioStreamWAV::7494684122379434719::1704058931::1704058938::1::::<><>::
 woosh.wav::AudioStreamWAV::304698690277987017::1704058931::1704058938::1::::<><>::
-::res://Enemy/::1704084974
-enemy.gd::GDScript::-1::1704084973::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::6645068220908419720::1704084974::0::1::::<><>::uid://o5ywcdrbri3l::::res://Textures/Enemy/kolbold_weak.png<>res://Enemy/enemy.gd<>uid://dika6hvl6rpxg::::res://Utility/hurt_box.tscn<>uid://b4tk6348uas2j::::res://Utility/hit_box.tscn
+::res://Enemy/::1704138357
+enemy.gd::GDScript::-1::1704121931::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::6645068220908419720::1704138357::0::1::::<><>::uid://o5ywcdrbri3l::::res://Textures/Enemy/kolbold_weak.png<>res://Enemy/enemy.gd<>uid://dika6hvl6rpxg::::res://Utility/hurt_box.tscn<>uid://b4tk6348uas2j::::res://Utility/hit_box.tscn
 ::res://Font/::1704058937
 tenderness.otf::FontFile::1681811595124001885::1704058931::1704058937::1::::<><>::
-::res://Player/::1704084974
-Player.gd::GDScript::-1::1704084961::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::3605177976623777998::1704084974::0::1::::<><>::res://Player/Player.gd<>uid://sog2yosu23cr::::res://Textures/Player/player_sprite.png<>uid://dika6hvl6rpxg::::res://Utility/hurt_box.tscn
+::res://Player/::1704138357
+Player.gd::GDScript::-1::1704137851::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::3605177976623777998::1704138357::0::1::::<><>::res://Player/Player.gd<>uid://sog2yosu23cr::::res://Textures/Player/player_sprite.png<>uid://dika6hvl6rpxg::::res://Utility/hurt_box.tscn
+::res://Player/Attack/::1704140217
+ice_spear.gd::GDScript::-1::1704138356::0::1::::<>Area2D<>::
+ice_spear.tscn::PackedScene::6766188907081128191::1704140217::0::1::::<><>::uid://ikx8l4hf7j6p::::res://Textures/Items/Weapons/ice_spear.png<>res://Player/Attack/ice_spear.gd<>uid://ds56owfmug780::::res://Audio/SoundEffect/ice.wav
 ::res://Textures/::1704058938
 dirt_full_new.png::CompressedTexture2D::5533319017806968471::1704058931::1704058938::1::::<><>::
 ::res://Textures/Enemy/::1704058938
@@ -286,13 +291,13 @@ sword.png::CompressedTexture2D::9122741086204090435::1704058931::1704058938::1::
 tornado.png::CompressedTexture2D::4071445515768751289::1704058931::1704058938::1::::<><>::
 ::res://Textures/Player/::1704058938
 player_sprite.png::CompressedTexture2D::1292714275466774045::1704058931::1704058938::1::::<><>::
-::res://Utility/::1704084974
-enemy_spawner.gd::GDScript::-1::1704081608::0::1::::<>Node2D<>::
-enemy_spawner.tscn::PackedScene::5154559449471702226::1704084974::0::1::::<><>::res://Utility/enemy_spawner.gd<>uid://c1w6kj77xrsjw::::res://Enemy/enemy.tscn<>res://Utility/spawn_info.gd
+::res://Utility/::1704138357
+enemy_spawner.gd::GDScript::-1::1704124502::0::1::::<>Node2D<>::
+enemy_spawner.tscn::PackedScene::5154559449471702226::1704138357::0::1::::<><>::res://Utility/enemy_spawner.gd<>uid://c1w6kj77xrsjw::::res://Enemy/enemy.tscn<>res://Utility/spawn_info.gd
 hit_box.gd::GDScript::-1::1704075674::0::1::::<>Area2D<>::
-hit_box.tscn::PackedScene::4461784373041141895::1704084974::0::1::::<><>::res://Utility/hit_box.gd
-hurt_box.gd::GDScript::-1::1704079398::0::1::::<>Area2D<>::
-hurt_box.tscn::PackedScene::7741472337981457896::1704084974::0::1::::<><>::res://Utility/hurt_box.gd
+hit_box.tscn::PackedScene::4461784373041141895::1704138357::0::1::::<><>::res://Utility/hit_box.gd
+hurt_box.gd::GDScript::-1::1704138105::0::1::::<>Area2D<>::
+hurt_box.tscn::PackedScene::7741472337981457896::1704138357::0::1::::<><>::res://Utility/hurt_box.gd
 spawn_info.gd::GDScript::-1::1704081608::0::1::::Spawn_info<>Resource<>::
-::res://World/::1704085819
-world.tscn::PackedScene::1056445287460570843::1704085819::0::1::::<><>::uid://brmm0wi54qeug::::res://Player/Player.tscn<>uid://c1w6kj77xrsjw::::res://Enemy/enemy.tscn<>uid://cfo53uilax8je::::res://Utility/enemy_spawner.tscn<>uid://bqngnksxymnak::::res://2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png
+::res://World/::1704138357
+world.tscn::PackedScene::1056445287460570843::1704138357::0::1::::<><>::uid://brmm0wi54qeug::::res://Player/Player.tscn<>uid://c1w6kj77xrsjw::::res://Enemy/enemy.tscn<>uid://cfo53uilax8je::::res://Utility/enemy_spawner.tscn<>uid://bqngnksxymnak::::res://2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png<>uid://f5v6fes7r2bg::::res://paused_menu.tscn

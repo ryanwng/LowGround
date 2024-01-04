@@ -4,3 +4,7 @@ res://Enemy/enemy.tscn
 res://Utility/hit_box.tscn
 res://Utility/hurt_box.tscn
 res://Utility/enemy_spawner.tscn
+res://paused_menu.tscn
+res://Player/Attack/ice_spear.tscn
+res://Player/Player.gd
+res://Player/Attack/ice_spear.gd

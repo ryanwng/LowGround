@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var movement_speed = 80.0 #Can change this var on the side in "Inspector"
+@export var movement_speed = 20.0 #Can change this var on the side in "Inspector"
 @export var hp = 10
 
 @onready var player = get_tree().get_first_node_in_group("player") #Finds the player
