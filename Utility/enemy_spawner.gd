@@ -27,7 +27,7 @@ func _on_timer_timeout():
 					counter +=1 #increase counter until all enemies have spawned
 					
 func get_random_position():
-	var vpr = get_viewport_rect().size * randf_range(1.1,1.4) #viewport rect and makes them spawn off screen
+	var vpr = get_viewport_rect().size * randf_range(0.7,0.95) #viewport rect and makes them spawn off screen
 	var top_left = Vector2(player.global_position.x - vpr.x/2, player.global_position.y - vpr.y/2) #Minus as up is negative in Godot
 	var top_right = Vector2(player.global_position.x + vpr.x/2, player.global_position.y - vpr.y/2)
 	var bottom_left = Vector2(player.global_position.x - vpr.x/2, player.global_position.y + vpr.y/2)
