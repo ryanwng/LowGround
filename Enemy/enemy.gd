@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var movement_speed = 40.0 #Can change this var on the side in "Inspector"
 @export var hp = 10
-@export var knockback_recovery = 3.5
+@export var knockback_recovery = 3.5 #Increase to reduce knockback
 var knockback = Vector2.ZERO
 
 
@@ -19,7 +19,7 @@ func _ready():
 	anim.play("walk")
 
 func _physics_process(delta):
-	knockback = knockback.move_toward(Vector2.ZERO, knockback_recovery) #Reduce knockback that has occured
+	knockback = knockback.move_toward(Vector2.ZERO, knockback_recovery) #Reduce knockback ev ery frame
 	var direction = global_position.direction_to(player.global_position) #Finds the vector to get to the player
 	velocity = direction * movement_speed
 	velocity += knockback
@@ -28,11 +28,11 @@ func _physics_process(delta):
 	sprite.flip_h = direction.x > 0 #flips sprite
 
 func death():
-	emit_signal("remove_from_array",self)
-	var enemy_death = death_anim.instantiate()
-	enemy_death.scale = sprite.scale
-	enemy_death.global_position = global_position
-	get_parent().call_deferred("add_child",enemy_death)
+	emit_signal("remove_from_array",self) #Clear enemy from array
+	var enemy_death = death_anim.instantiate() #instances explosion scene
+	enemy_death.scale = sprite.scale #set explosion scale to sprite scale
+	enemy_death.global_position = global_position #set global position to enemies position
+	get_parent().call_deferred("add_child",enemy_death) #Spawn explosion on the enemy spawner
 	queue_free()
 
 func _on_hurt_box_hurt(damage,angle,knockback_amount):
