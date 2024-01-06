@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://c1w6kj77xrsjw"]
 
-[ext_resource type="Texture2D" uid="uid://o5ywcdrbri3l" path="res://Textures/Enemy/kolbold_weak.png" id="1_gc515"]
 [ext_resource type="Script" path="res://Enemy/enemy.gd" id="1_tir3k"]
+[ext_resource type="Texture2D" uid="uid://c0sy0xcpuja4n" path="res://2D Pixel Dungeon Asset Pack/SUS_DEATH_sprite.png" id="2_qxopy"]
 [ext_resource type="PackedScene" uid="uid://dika6hvl6rpxg" path="res://Utility/hurt_box.tscn" id="3_fx5wy"]
 [ext_resource type="PackedScene" uid="uid://b4tk6348uas2j" path="res://Utility/hit_box.tscn" id="4_eynnu"]
 [ext_resource type="AudioStream" uid="uid://brpt8nmpby81e" path="res://Audio/SoundEffect/enemy_hit.ogg" id="5_a6mft"]
@@ -61,8 +61,9 @@ motion_mode = 1
 script = ExtResource("1_tir3k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_gc515")
-hframes = 2
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_qxopy")
+hframes = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 3)

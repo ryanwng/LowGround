@@ -25,7 +25,7 @@ func _physics_process(delta):
 	velocity += knockback
 	move_and_collide(velocity*delta) #avoids clipping
 	
-	sprite.flip_h = direction.x > 0 #flips sprite
+	sprite.flip_h = direction.x < 0 #flips sprite
 
 func death():
 	emit_signal("remove_from_array",self) #Clear enemy from array
