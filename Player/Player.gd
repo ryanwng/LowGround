@@ -23,7 +23,7 @@ var icespear_attackspeed = 1.5
 var icespear_level = 1
 
 #Tornado
-var tornado_ammo = 1
+var tornado_ammo = 0
 var tornado_baseammo = 1 #increases number spawned in
 var tornado_attackspeed = 3
 var tornado_level = 1
@@ -95,13 +95,13 @@ func get_random_target() -> Vector2: #Technically targets closest and not random
 		#return Vector2.UP
 	
 func _on_tornado_timer_timeout():
-	tornado_ammo += tornado_baseammo
-	tornadoAttackTimer.start()
+	tornado_ammo += tornado_baseammo #reload ammo for tornado
+	tornadoAttackTimer.start() #start tornado attack timer
 
 
 func _on_tornado_attack_timer_timeout():
 	if tornado_ammo > 0:
-		var tornado_attack = tornado.instantiate()
+		var tornado_attack = tornado.instantiate() #Spawns tornado
 		tornado_attack.position = position
 		tornado_attack.last_movement = last_movement
 		tornado_attack.level = tornado_level

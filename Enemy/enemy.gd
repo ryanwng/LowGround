@@ -30,7 +30,7 @@ func _physics_process(delta):
 func death():
 	emit_signal("remove_from_array",self) #Clear enemy from array
 	var enemy_death = death_anim.instantiate() #instances explosion scene
-	enemy_death.scale = sprite.scale #set explosion scale to sprite scale
+	#enemy_death.scale = sprite.scale #set explosion scale to sprite scale
 	enemy_death.global_position = global_position #set global position to enemies position
 	get_parent().call_deferred("add_child",enemy_death) #Spawn explosion on the enemy spawner
 	queue_free()

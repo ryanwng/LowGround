@@ -29,4 +29,6 @@ autostart = true
 stream = ExtResource("3_cjv15")
 autoplay = true
 
+[node name="Node" type="Node" parent="."]
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

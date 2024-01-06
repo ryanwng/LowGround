@@ -1,3 +1,5 @@
+Node
+Node2D
 Timer
 AudioStreamPlayer
 CollisionShape2D
@@ -6,7 +8,6 @@ Area2D
 AnimationPlayer
 AudioStreamPlayer2D
 VisibleOnScreenNotifier2D
-Node2D
 CanvasLayer
 Button
 Label
