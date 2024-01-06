@@ -9,6 +9,9 @@ var attack_size = 1.0
 
 var target = Vector2.ZERO
 var angle = Vector2.ZERO
+var angle_less = Vector2.ZERO
+var angle_more = Vector2.ZERO
+
 
 @onready var player = get_tree().get_first_node_in_group("player")
 signal remove_from_array(object)
@@ -24,7 +27,9 @@ func _ready():
 			knockback_amount = 100
 			attack_size = 1.0
 			
-			
+	
+
+		
 	var tween = create_tween()
 	tween.tween_property(self,"scale",Vector2(1,1)*attack_size,1).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 	tween.play()
