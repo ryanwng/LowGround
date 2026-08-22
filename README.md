@@ -4,6 +4,8 @@ A fast, top-down **survival action roguelite** built in **Godot 4** — dodge en
 swarms, vacuum up XP gems, and pick upgrades every level as the horde escalates.
 Survive 5 minutes to win. Inspired by *Vampire Survivors*.
 
+### ▶ [Play it free in your browser on itch.io](https://ryanwng.itch.io/impostor-killer)
+
 ![Imposter Killer gameplay](screenshots/gameplay.gif)
 
 > _Recording the gif:_ capture ~8–10s of busy mid-run action — a level-up card
@@ -12,7 +14,7 @@ Survive 5 minutes to win. Inspired by *Vampire Survivors*.
 
 ---
 
-## Play
+## How to play
 
 - **WASD** — move
 - **Space** — attack (ice spears auto-aim the nearest enemy)
@@ -42,20 +44,15 @@ enemies (kobolds, cyclopes, amoebas, juggernauts) arrive as the timer climbs.
 - Autoload singletons for the upgrade DB and save/settings data
 - Dedicated audio buses (Master / Music / SFX) with a runtime mixer
 - Collision-layer-based hit/hurt boxes shared across player, enemies, and pickups
-- Web-export ready (see [`DEPLOY.md`](DEPLOY.md))
+- Exported to HTML5 and published on **itch.io**
 
-## Run it
+## Play
 
-1. Open the project in **Godot 4.7**.
-2. Press **Play** (`F5`). Main scene is `res://GUI/main_menu.tscn`.
-
-## Play in the browser
-
-The project is set up for an HTML5 export to GitHub Pages — see
-[`DEPLOY.md`](DEPLOY.md) for the (short) steps.
+- **In your browser:** <https://ryanwng.itch.io/impostor-killer> (no download)
+- **From source:** open the project in **Godot 4.7** and press **Play** (`F5`).
+  Main scene is `res://GUI/main_menu.tscn`.
 
 ## Credits
 
 - Extended from a *Vampire Survivors*-style Godot tutorial base.
 - Art: "2D Pixel Dungeon Asset Pack" and the project's bundled sprite/audio packs.
-- `web/coi-serviceworker.js` © Guido Zuidhof et al., MIT.
