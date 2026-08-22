@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dn68pt84eshh1"]
+
+[ext_resource type="PackedScene" uid="uid://c1w6kj77xrsjw" path="res://Enemy/enemy.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://c0sy0xcpuja4n" path="res://2D Pixel Dungeon Asset Pack/SUS_DEATH_sprite.png" id="2_tex"]
+[ext_resource type="PackedScene" uid="uid://24as4wo2w6hg" path="res://Enemy/explosion.tscn" id="3_death"]
+
+[node name="enemy_amongus" instance=ExtResource("1_base")]
+death_anim = ExtResource("3_death")
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_tex")
+hframes = 13

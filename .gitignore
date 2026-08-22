@@ -1,0 +1,17 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot exported/imported artifacts
+/android/
+*.translation
+
+# Web export build output (exported to project root; kept out of source)
+/index.*
+/low-ground-web.zip
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# NOTE: do NOT ignore /docs — GitHub Pages serves the web build from there.

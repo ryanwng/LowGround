@@ -1,23 +1,59 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfo53uilax8je"]
+[gd_scene load_steps=13 format=3 uid="uid://cfo53uilax8je"]
 
 [ext_resource type="Script" path="res://Utility/enemy_spawner.gd" id="1_2ymrv"]
-[ext_resource type="PackedScene" uid="uid://c1w6kj77xrsjw" path="res://Enemy/enemy.tscn" id="2_c7lnd"]
-[ext_resource type="Script" path="res://Utility/spawn_info.gd" id="3_yp68k"]
+[ext_resource type="Script" path="res://Utility/spawn_info.gd" id="2_info"]
+[ext_resource type="PackedScene" uid="uid://denemyamongus01" path="res://Enemy/enemy_amongus.tscn" id="3_weak"]
+[ext_resource type="PackedScene" uid="uid://denemystrong01" path="res://Enemy/enemy_strong.tscn" id="4_strong"]
+[ext_resource type="PackedScene" uid="uid://denemycyclops01" path="res://Enemy/enemy_cyclops.tscn" id="5_cyclops"]
+[ext_resource type="PackedScene" uid="uid://denemyamoeba01" path="res://Enemy/enemy_amoeba.tscn" id="6_amoeba"]
+[ext_resource type="PackedScene" uid="uid://denemyjugger01" path="res://Enemy/enemy_juggernaut.tscn" id="7_jugger"]
 
-[sub_resource type="Resource" id="Resource_or7o6"]
-script = ExtResource("3_yp68k")
+[sub_resource type="Resource" id="Resource_weak"]
+script = ExtResource("2_info")
 time_start = 0
-time_end = 80
-enemy = ExtResource("2_c7lnd")
-enemy_num = 5
+time_end = 300
+enemy = ExtResource("3_weak")
+enemy_num = 3
 enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_strong"]
+script = ExtResource("2_info")
+time_start = 30
+time_end = 300
+enemy = ExtResource("4_strong")
+enemy_num = 2
+enemy_spawn_delay = 2
+
+[sub_resource type="Resource" id="Resource_cyclops"]
+script = ExtResource("2_info")
+time_start = 75
+time_end = 300
+enemy = ExtResource("5_cyclops")
+enemy_num = 1
+enemy_spawn_delay = 3
+
+[sub_resource type="Resource" id="Resource_amoeba"]
+script = ExtResource("2_info")
+time_start = 150
+time_end = 300
+enemy = ExtResource("6_amoeba")
+enemy_num = 3
+enemy_spawn_delay = 2
+
+[sub_resource type="Resource" id="Resource_jugger"]
+script = ExtResource("2_info")
+time_start = 210
+time_end = 300
+enemy = ExtResource("7_jugger")
+enemy_num = 1
+enemy_spawn_delay = 4
 
 [node name="EnemySpawner" type="Node2D"]
 script = ExtResource("1_2ymrv")
-spawns = Array[ExtResource("3_yp68k")]([SubResource("Resource_or7o6")])
+spawns = Array[ExtResource("2_info")]([SubResource("Resource_weak"), SubResource("Resource_strong"), SubResource("Resource_cyclops"), SubResource("Resource_amoeba"), SubResource("Resource_jugger")])
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.25
+wait_time = 1.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

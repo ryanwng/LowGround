@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cbd4101m6w5ke"]
+
+[ext_resource type="PackedScene" uid="uid://c1w6kj77xrsjw" path="res://Enemy/enemy.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://5gflmq5i50bi" path="res://Textures/Enemy/juggernaut.png" id="2_tex"]
+
+[node name="enemy_juggernaut" instance=ExtResource("1_base")]
+hp = 150
+movement_speed = 22.0
+experience = 6
+contact_damage = 20
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tex")

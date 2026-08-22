@@ -128,4 +128,3 @@ func _on_timer_timeout():
 #func _on_timer_timeout() -> void:
 	#remove_from_array.emit("remove_from_array",self)
 	#queue_free()
-

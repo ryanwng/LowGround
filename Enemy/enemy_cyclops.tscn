@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dn68r6v2mnhh1"]
+
+[ext_resource type="PackedScene" uid="uid://c1w6kj77xrsjw" path="res://Enemy/enemy.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://dlm3yapn2qfah" path="res://Textures/Enemy/cyclops.png" id="2_tex"]
+
+[node name="enemy_cyclops" instance=ExtResource("1_base")]
+hp = 60
+movement_speed = 30.0
+experience = 3
+contact_damage = 12
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tex")

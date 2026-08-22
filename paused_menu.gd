@@ -1,5 +1,7 @@
 extends Control
 
+const SettingsPanel = preload("res://GUI/settings_panel.gd")
+
 #var _is_paused:bool = false:
 #	set = set_paused #calls function set_paused
 
@@ -23,7 +25,10 @@ func _on_resume_btn_pressed():
 	_is_paused = false
 
 func _on_setting_btn_pressed():
-	pass
+	var panel := Control.new()
+	panel.set_script(SettingsPanel)
+	panel.process_mode = Node.PROCESS_MODE_ALWAYS
+	add_child(panel)
 
 func _on_quit_btn_pressed():
 	get_tree().quit()

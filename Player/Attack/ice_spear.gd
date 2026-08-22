@@ -9,6 +9,7 @@ var attack_size = 1.0
 
 var target = Vector2.ZERO
 var angle = Vector2.ZERO
+var angle_offset = 0.0 #radians, lets the player fan out multiple spears
 var angle_less = Vector2.ZERO
 var angle_more = Vector2.ZERO
 
@@ -17,13 +18,12 @@ var angle_more = Vector2.ZERO
 signal remove_from_array(object)
 
 func _ready():
-	angle = global_position.direction_to(target)
+	angle = global_position.direction_to(target).rotated(angle_offset)
 	rotation = angle.angle() + deg_to_rad(135) #gets angle in radians
 	match level:
-		1:	
+		1:
 			hp = 100 #Change this number to change pierce
 			speed = 100
-			damage = 5
 			knockback_amount = 100
 			attack_size = 1.0
 			

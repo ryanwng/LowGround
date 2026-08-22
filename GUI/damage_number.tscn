@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cvpebgbfu7m5u"]
+
+[ext_resource type="Script" path="res://GUI/damage_number.gd" id="1_dn"]
+[ext_resource type="FontFile" uid="uid://x7xgrdeg4sef" path="res://Font/tenderness.otf" id="2_dn"]
+
+[node name="DamageNumber" type="Node2D"]
+z_index = 5
+script = ExtResource("1_dn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -12.0
+offset_top = -10.0
+offset_right = 12.0
+offset_bottom = 6.0
+theme_override_fonts/font = ExtResource("2_dn")
+theme_override_font_sizes/font_size = 10
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

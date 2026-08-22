@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cbd42a0yf6tke"]
+
+[ext_resource type="PackedScene" uid="uid://c1w6kj77xrsjw" path="res://Enemy/enemy.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://b1vk8jefvms4a" path="res://Textures/Enemy/kolbold_strong.png" id="2_tex"]
+
+[node name="enemy_kobold_strong" instance=ExtResource("1_base")]
+hp = 25
+movement_speed = 45.0
+experience = 2
+contact_damage = 8
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tex")
