@@ -4,13 +4,10 @@ A fast, top-down **survival action roguelite** built in **Godot 4** — dodge en
 swarms, vacuum up XP gems, and pick upgrades every level as the horde escalates.
 Survive 5 minutes to win. Inspired by *Vampire Survivors*.
 
-### ▶ [Play it free in your browser on itch.io](https://ryanwng.itch.io/impostor-killer)
+### ▶ [Play it in your browser on itch.io](https://ryanwng.itch.io/impostor-killer)
 
-![Imposter Killer gameplay](screenshots/gameplay.gif)
+<img width="1505" height="898" alt="Vampire Survivors" src="https://github.com/user-attachments/assets/22da2f0e-e42b-42ea-a84e-9699f2c35525" />
 
-> _Recording the gif:_ capture ~8–10s of busy mid-run action — a level-up card
-> pick followed by a screen full of spears/tornadoes shredding enemies — and save
-> it as `screenshots/gameplay.gif`. It will appear above automatically.
 
 ---
 
@@ -31,13 +28,11 @@ enemies (kobolds, cyclopes, amoebas, juggernauts) arrive as the timer climbs.
 - **Wave-based spawner** with a timed spawn table and difficulty that ramps to a
   5-minute climax.
 - **Two weapons** — piercing ice spears and roaming tornadoes (unlockable).
-- **Game feel** — enemy hit-flash, camera shake, floating damage numbers, and
-  level-up/pickup pops.
-- **Full UI flow** — main menu, in-game pause + settings (Master/Music/SFX
+- **Comprehensive UI** — main menu, in-game pause + settings (Master/Music/SFX
   sliders), and a win/lose run-summary screen (time, level, kills, gems, best).
 - **Persistence** — best time and volume settings saved to disk (JSON).
 
-## Tech highlights
+## Fancy Tech I did
 
 - **Engine:** Godot 4.7, GDScript
 - Signal-driven HUD decoupled from the player
@@ -48,7 +43,7 @@ enemies (kobolds, cyclopes, amoebas, juggernauts) arrive as the timer climbs.
 
 ## Play
 
-- **In your browser:** <https://ryanwng.itch.io/impostor-killer> (no download)
+- **In your browser:** <https://ryanwng.itch.io/impostor-killer> 
 - **From source:** open the project in **Godot 4.7** and press **Play** (`F5`).
   Main scene is `res://GUI/main_menu.tscn`.
 
