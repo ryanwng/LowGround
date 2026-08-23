@@ -1,4 +1,4 @@
-# Imposter Killer
+# Impostor Killer
 
 A fast, top-down **survival action roguelite** built in **Godot 4** — dodge endless
 swarms, vacuum up XP gems, and pick upgrades every level as the horde escalates.

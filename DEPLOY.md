@@ -1,4 +1,4 @@
-# Deploying "Imposter Killer" to the web (GitHub Pages)
+# Deploying "Impostor Killer" to the web (GitHub Pages)
 
 This project is **prepared** for a Godot 4 HTML5 export to GitHub Pages, but the
 export itself has not been run yet (it requires the Godot editor + web export

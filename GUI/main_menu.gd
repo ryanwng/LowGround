@@ -25,7 +25,7 @@ func _build_main() -> void:
 	box.add_theme_constant_override("separation", 10)
 	center.add_child(box)
 
-	var title := _label("Imposter Killer", 36)
+	var title := _label("Impostor Killer", 36)
 	title.add_theme_color_override("font_color", Color(0.85, 0.9, 1.0))
 	box.add_child(title)
 
